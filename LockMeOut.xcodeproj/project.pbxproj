@@ -13,6 +13,9 @@
 		6CA84E8C25E3168600C73B88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA84E8A25E3168600C73B88 /* Main.storyboard */; };
 		6CA84E8E25E3168700C73B88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CA84E8D25E3168700C73B88 /* Assets.xcassets */; };
 		6CA84E9125E3168700C73B88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA84E8F25E3168700C73B88 /* LaunchScreen.storyboard */; };
+		6CA84E9B25E31AD900C73B88 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA84E9A25E31AD900C73B88 /* KeychainWrapper.swift */; };
+		6CA84E9E25E31ADB00C73B88 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA84E9D25E31ADB00C73B88 /* KeychainItemAccessibility.swift */; };
+		6CA84EA325E31D4400C73B88 /* LockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA84EA225E31D4400C73B88 /* LockViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,10 @@
 		6CA84E8D25E3168700C73B88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CA84E9025E3168700C73B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CA84E9225E3168700C73B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CA84E9A25E31AD900C73B88 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		6CA84E9D25E31ADB00C73B88 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		6CA84EA025E31AF900C73B88 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6CA84EA225E31D4400C73B88 /* LockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +47,7 @@
 		6CA84E7825E3168600C73B88 = {
 			isa = PBXGroup;
 			children = (
+				6CA84EA025E31AF900C73B88 /* README.md */,
 				6CA84E8325E3168600C73B88 /* LockMeOut */,
 				6CA84E8225E3168600C73B88 /* Products */,
 			);
@@ -58,11 +66,14 @@
 			children = (
 				6CA84E8425E3168600C73B88 /* AppDelegate.swift */,
 				6CA84E8625E3168600C73B88 /* SceneDelegate.swift */,
+				6CA84EA225E31D4400C73B88 /* LockViewController.swift */,
 				6CA84E8825E3168600C73B88 /* ViewController.swift */,
 				6CA84E8A25E3168600C73B88 /* Main.storyboard */,
 				6CA84E8D25E3168700C73B88 /* Assets.xcassets */,
 				6CA84E8F25E3168700C73B88 /* LaunchScreen.storyboard */,
 				6CA84E9225E3168700C73B88 /* Info.plist */,
+				6CA84E9A25E31AD900C73B88 /* KeychainWrapper.swift */,
+				6CA84E9D25E31ADB00C73B88 /* KeychainItemAccessibility.swift */,
 			);
 			path = LockMeOut;
 			sourceTree = "<group>";
@@ -138,7 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CA84E8925E3168600C73B88 /* ViewController.swift in Sources */,
+				6CA84E9B25E31AD900C73B88 /* KeychainWrapper.swift in Sources */,
 				6CA84E8525E3168600C73B88 /* AppDelegate.swift in Sources */,
+				6CA84EA325E31D4400C73B88 /* LockViewController.swift in Sources */,
+				6CA84E9E25E31ADB00C73B88 /* KeychainItemAccessibility.swift in Sources */,
 				6CA84E8725E3168600C73B88 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DAW426J6S;
 				INFOPLIST_FILE = LockMeOut/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DAW426J6S;
 				INFOPLIST_FILE = LockMeOut/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
