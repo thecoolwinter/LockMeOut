@@ -4,6 +4,8 @@
 
 Screen Recording of the app:
 
+![Recording](https://github.com/thecoolwinter/LockMeOut/img/1.gif)
+
 ## How the flow works:
 
 1. User starts the locking mechanism by tapping `Tap To Start`.  This sets a boolean to true that we'll check in `SceneDelegate`
