@@ -4,8 +4,6 @@
 
 Screen Recording of the app:
 
-<video src="img/1.MP4"></video>
-
 ## How the flow works:
 
 1. User starts the locking mechanism by tapping `Tap To Start`.  This sets a boolean to true that we'll check in `SceneDelegate`
