@@ -4,7 +4,7 @@
 
 Screen Recording of the app:
 
-![Recording](https://github.com/thecoolwinter/LockMeOut/img/1.gif)
+![Recording](img/1.gif)
 
 ## How the flow works:
 
